@@ -7,9 +7,12 @@ using std::cout;
 
 int main() {
     // Set a equal to true here.
-    bool a = true;
+    bool a = false;
 
     if (a) {
       cout << "Hooray! You made it into the if statement!" << "\n";
+    }
+    else{
+      cout<<"stupid\n";
     }
 }

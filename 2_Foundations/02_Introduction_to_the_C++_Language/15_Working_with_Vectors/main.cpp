@@ -27,6 +27,6 @@ int main() {
     cout << b[2][1];
     cout << "\n";
     //Getting a Vector's Length
-    cout << b.size()<<"x"<<b[0].size()<<"\n";
+    cout << b.size()<<"x"<<b[1].size()<<"\n";
 
 }

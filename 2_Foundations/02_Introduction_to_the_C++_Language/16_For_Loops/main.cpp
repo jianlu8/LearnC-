@@ -1,5 +1,7 @@
 #include <iostream>
+#include <vector>
 using std::cout;
+using std::vector;
 
 int main() {
     /* For Loop with an Index Variable */
@@ -35,12 +37,11 @@ int main() {
     cout << "Decrement example:" << "\n";
     cout << "The value of i is: " << i << "\n";
 
-
     /* For Loop with a Container */
-    // C++ offers several ways to iterate over containers. 
-    // One way is to use an index-based loop as above. 
+    // C++ offers several ways to iterate over containers.
+    // One way is to use an index-based loop as above.
     // Another way is using a "range-based loop", which you will see frequently in the rest of this course.
-    vector<int> a {1, 2, 3, 4, 5};
+    vector<int> a {1, 3, 3, 4, 5};
     for (int i: a) {
         cout << i << "\n";
     }

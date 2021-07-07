@@ -1,7 +1,7 @@
 /* Streaming ints from a string with istringstream
 
 In C++ strings can be streamed into temporary variables,
-similarly to how files can be streamed into strings. 
+similarly to how files can be streamed into strings.
 Streaming a string allows us to work with each character individually.
 
 One way to stream a string is to use an input string stream object
@@ -49,8 +49,10 @@ void istringstream_test(){
     istringstream my_stream(a);
 
     int n;
-    my_stream >> n;
+    while (my_stream >> n)
+    {
     cout << n << "\n";
+    }
 }
 
 
@@ -62,7 +64,7 @@ void use_isstringstream_as_boolen_read_all(){
     istringstream my_stream(a);
 
     int n;
-    
+
     // Testing to see if the stream was successful and printing results.
     while (my_stream) {
         my_stream >> n;
@@ -70,7 +72,7 @@ void use_isstringstream_as_boolen_read_all(){
             cout << "That stream was successful: " << n << "\n";
         }
         else {
-            cout << "That stream was NOT successful!" << "\n";            
+            cout << "That stream was NOT successful!" << "\n";
         }
     }
 }
